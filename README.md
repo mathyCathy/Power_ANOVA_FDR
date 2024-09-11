@@ -9,3 +9,8 @@ Sample size and power calculations for 1-way ANOVA rolling in FDR
 * Comparisons via ANOVA
 * 3000-4000 protein (outcomes) so want to control FDR
 * Ideally, assumed N, 80% and produce minimal detectable effect sizes
+
+## Approach
+
+* Write a function to calculate power (via simulations) for 1-way ANOVA with unequal group sizes
+* Use R project 'FDRsampsize' that takes in fdr, n, power function (above), eff.size (effect size vector), null.effect.
