@@ -18,7 +18,7 @@ Sample size and power calculations for 1-way ANOVA rolling in FDR
 
 $$\alpha = \displaystyle\frac{f(1-\pi_0)(1-\beta)}{\pi_0(1-f)}.$$
 
-We could the bespoke power function described above to calculate the minimum detectable effect sizes, given the group sample sizes and desired power based on value of $\alpha$. 
+    + We could the bespoke power function described above to calculate the minimum detectable effect sizes, given the group sample sizes and desired power based on value of $\alpha$. 
 
 ## Defining *effect size* in these ANOVA power calculations
 
