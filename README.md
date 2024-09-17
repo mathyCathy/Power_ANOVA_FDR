@@ -13,8 +13,11 @@ Sample size and power calculations for 1-way ANOVA rolling in FDR
 
 ## Approach
 
-* Write a function to calculate power (via simulations) for 1-way ANOVA with unequal group sizes
-* Use R project 'FDRsampsize' that takes in fdr, n, power function (above), eff.size (effect size vector), null.effect.
+* Write a function to calculate power (via simulations) for 1-way ANOVA with possibly unequal group sizes
+* Suppose that of the $m=3000$ hypothesis tests performed, $\pi_0$ denotes the proportion that are truly null. The goal is to design a study so that we are powered at $(1-\beta)$ to declare significance for the $(1-\pi_0)\times m$ tests that have a signal, while controlling for the FDR, denoted $f$. Jung 2005 (Bioinformatics) has shown that the p-value threshold ($\alpha$) used to declare significance is estimated by:
+$$\alpha = \displaystyle\frac{f(1-\pi_0)(1-\beta)}{\pi_0(1-f)}.$$
+
+We could the bespoke power function described above to calculate the minimum detectable effect sizes, given the group sample sizes and desired power based on value of $\alpha$. 
 
 ## Defining *effect size* in these ANOVA power calculations
 
