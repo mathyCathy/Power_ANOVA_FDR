@@ -22,6 +22,6 @@ For ANOVA with equal group sizes $n_1=n_2=\dots=n_G$ and common variance $\sigma
 
 $$\sigma_m^2 = \displaystyle\sum_{i=1}^G \displaystyle\frac{n_i}{N}\left(\mu_i - \mu_W \right)^2,$$ which for the case of 4 groups is 
 
-$$\sigma_m^2 = \displaystyle\frac{n_1}{N}\left(\delta - \mu_W)^2 +\displaystyle\frac{n_2}{N}\mu_W^2 + 
+$$\sigma_m^2 = \displaystyle\frac{n_1}{N}\left(\delta - \mu_W\right)^2 +\displaystyle\frac{n_2}{N}\mu_W^2 + 
 \displaystyle\frac{n_3}{N}\mu_W^2 + 
 \displaystyle\frac{n_4}{N}\mu_W^2$$
