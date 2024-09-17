@@ -4,11 +4,11 @@ Sample size and power calculations for 1-way ANOVA rolling in FDR
 <!-- ABOUT THE PROJECT -->
 ## Background and setup
 
-* 3-group exposure (n1 = 200, n2 = 20, n3 = 20) - can be generalized to more than 3 groups. 
+* 4-group exposure ($n_1 = 127$, $n_2 = 74$, $n_3 = 45$, $n_4 = 32$) - can be generalized to $G$ groups. Let $N$ be the total sample size.
 * Continuous outcome (can assumed to be normally distributed and standardized)
 * Comparisons via ANOVA
-    + Assume group 1 has mean $\delta$ and groups 2 and 3 have mean 0. See below section on defining the *effect size* relative to Cohen's definition (1988) in the standard ANOVA with equal group sizes.
-* 3000-4000 protein (outcomes) so want to control FDR
+    + Assume group 1 has mean $\delta$ and remaining groups have mean 0. See below section on defining the *effect size* relative to Cohen's definition (1988) in the standard ANOVA with equal group sizes.
+* 3000 proteins (outcomes) so want to control FDR
 * Ideally, assumed N, 80% and produce minimal detectable effect sizes
 
 ## Approach
@@ -18,4 +18,4 @@ Sample size and power calculations for 1-way ANOVA rolling in FDR
 
 ## Defining *effect size* in these ANOVA power calculations
 
-For ANOVA with equal group sizes $n_1=n_2=\dots=n_G$ and common variance $\sigma^2$.
+For ANOVA with equal group sizes $n_1=n_2=\dots=n_G$ and common variance $\sigma^2$. Let $\mu_W$ denoted the weighted mean of all groups. For the case of the 4 groups above, $$\mu_W=\displaystyle\frac{n_1}{N}\delta.$$
