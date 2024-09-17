@@ -31,3 +31,5 @@ $$\sigma_m^2 = \displaystyle\frac{n_1}{N}\left(\delta - \mu_W\right)^2 +\display
 Cohen (1988) defined the effect size $f$ as 
 
 $$f = \sqrt{\displaystyle\frac{\sigma_m^2}{\sigma^2}}.$$
+
+In our case, we assume $\sigma=1$ and thus $f = \sigma_m$. Note: this differs from what I intuitively assumed was the effect size which was just the difference in means of the group with the largest mean vs. the smallest mean scaled by the variance, i.e., $\delta$. 
