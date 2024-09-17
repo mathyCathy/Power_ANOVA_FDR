@@ -18,4 +18,6 @@ Sample size and power calculations for 1-way ANOVA rolling in FDR
 
 ## Defining *effect size* in these ANOVA power calculations
 
-For ANOVA with equal group sizes $n_1=n_2=\dots=n_G$ and common variance $\sigma^2$. Let $\mu_W$ denoted the weighted mean of all groups. For the case of the 4 groups above, $$\mu_W=\displaystyle\frac{n_1}{N}\delta.$$
+For ANOVA with equal group sizes $n_1=n_2=\dots=n_G$ and common variance $\sigma^2$. Let $\mu_W$ denoted the weighted mean of all groups. For the case of the 4 groups above, $$\mu_W=\displaystyle\frac{n_1}{N}\delta.$$ Additionally, define $\sigma_m^2$ as follows:
+
+$$\sigma_m^2 = \displaystyle\sum_{i=1}^G \displaystyle\frac{n_i}{N}\left(\mu_i - \mu_W \right)^2 $$
