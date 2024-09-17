@@ -33,3 +33,6 @@ Cohen (1988) defined the effect size $f$ as
 $$f = \sqrt{\displaystyle\frac{\sigma_m^2}{\sigma^2}}.$$
 
 In our case, we assume $\sigma=1$ and thus $f = \sigma_m$. Note: this differs from what I intuitively assumed was the effect size which was just the difference in means of the group with the largest mean vs. the smallest mean scaled by the variance, i.e., $\delta$. 
+
+So for a given effect size $f$, in the setting described above, this specified that the mean of the first group, given by $\delta$ is 
+$$\delta = f \displaystyle\frac{N}{n_1(N-n_1)}.$$
