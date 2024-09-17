@@ -36,4 +36,4 @@ In our case, we assume $\sigma=1$ and thus $f = \sigma_m$. Note: this differs fr
 
 So for a given effect size $f$, in the setting described above, this specified that the mean of the first group, given by $\delta$ is 
 
-$$\delta = f \displaystyle\frac{N}{n_1(N-n_1)}.$$
+$$\delta = f \displaystyle\frac{N}{\sqrt{n_1(N-n_1)}}.$$
