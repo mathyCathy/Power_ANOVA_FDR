@@ -14,15 +14,18 @@ power_1wayANOVA_G <- function(n = 278, alpha = 0.05, eff_size, group_n_vec = c(1
   
   set.seed(seed)
   rejectVec = rep(NA, R)
+  
+  num_groups = length(group_n_vec) + 1
+  
   for (r in 1:R){
-    y1 = rnorm(group_n_vec[1], mean = delta, sd = 1)
-    y2 = rnorm(group_n_vec[2], mean = 0, sd = 1)
-    y3 = rnorm(group_n_vec[3], mean = 0, sd = 1)
-    y4 = rnorm(n - sum(group_n_vec), mean = 0, sd = 1)
+    
+    y = rep(NA, n)
+    y[1:group_n_vec[1]] = rnorm(group_n_vec[1], mean = delta, sd = 1)
+    y[(group_n_vec[1] + 1):n] = rnorm(n - group_n_vec[1], mean = 0, sd = 1) # all other groups are independent std normal
     
     # setup data
-    dat = data.frame(y = c(y1, y2, y3, y4), 
-                     group = rep(paste0("Group", 1:4), c(group_n_vec, n - sum(group_n_vec))))
+    dat = data.frame(y = y, 
+                     group = rep(paste0("Group", 1:num_groups), c(group_n_vec, n - sum(group_n_vec))))
     fit.anova = aov(y ~ group, data = dat)
     
     # p-value
