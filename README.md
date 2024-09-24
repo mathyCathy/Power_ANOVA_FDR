@@ -30,7 +30,8 @@ which for the case of 4 groups is
 
 $$\sigma_m^2 = \displaystyle\frac{n_1}{N}\left(\delta - \mu_W\right)^2 +\displaystyle\frac{n_2}{N}\mu_W^2 + 
 \displaystyle\frac{n_3}{N}\mu_W^2 + 
-\displaystyle\frac{n_4}{N}\mu_W^2 = \displaystyle\frac{n_1}{N}\left(\delta - \mu_W\right)^2 +\displaystyle\frac{N - n_1}{N}\mu_W^2.$$
+\displaystyle\frac{n_4}{N}\mu_W^2 = \displaystyle\frac{n_1}{N}\left(\delta - \mu_W\right)^2 +\displaystyle\frac{N - n_1}{N}\mu_W^2=
+\delta^2\left[\displaystyle\frac{n(N - n_1)}{N^2}\right]$$
 
 Cohen (1988) defined the effect size $f$ as 
 
